@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
+import { PondManagementComponent } from './pond-management/pond-management.component';
+import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PondManagementComponent,
+    SensorDetailsComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
