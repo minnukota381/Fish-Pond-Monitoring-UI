@@ -1,1 +1,7 @@
-<p>sensor-details works!</p>
+<h2>{{ selectedPond.name }} - Sensor Details</h2>
+<div class="sensor-cards">
+  <div class="sensor-card" *ngFor="let sensor of sensors">
+    <h3>{{ sensor.name }}</h3>
+    <p>{{ sensor.value }}</p>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.sensor-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.sensor-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}

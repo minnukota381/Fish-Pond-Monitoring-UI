@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './sensor-details.component.css'
 })
 export class SensorDetailsComponent {
+  sensors = [
+    { name: 'pH Level', value: '7.5' },
+    { name: 'Oxygen Level', value: '5.2 mg/L' },
+    { name: 'Rainfall', value: '12 mm' },
+    { name: 'Water Level', value: '1.2 meters' },
+    // Add more sensors as needed
+  ];
 
 }
