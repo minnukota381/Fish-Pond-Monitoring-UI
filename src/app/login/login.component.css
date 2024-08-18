@@ -113,9 +113,18 @@ h2::after {
   margin-bottom: 30px;
 }
 
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  transition: all 0.3s ease;
+}
+
 input {
   width: 100%;
-  padding: 12px 0;
+  padding: 12px 0 12px 35px;
   font-size: 16px;
   color: #333;
   border: none;
@@ -127,9 +136,9 @@ input {
 
 label {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 12px 0;
+  top: 50%;
+  left: 35px;
+  transform: translateY(-50%);
   font-size: 16px;
   color: #999;
   pointer-events: none;
@@ -138,10 +147,16 @@ label {
 
 input:focus ~ label,
 input:valid ~ label {
-  top: -20px;
+  top: -10px;
+  left: 35px;
   font-size: 14px;
   color: #667eea;
   font-weight: 600;
+}
+
+input:focus ~ i,
+input:valid ~ i {
+  color: #667eea;
 }
 
 input:focus {
