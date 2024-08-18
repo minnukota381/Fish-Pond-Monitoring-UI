@@ -19,7 +19,7 @@
       <div class="team-card" *ngFor="let member of teamMembers">
         <div class="team-card-inner">
           <div class="team-card-front">
-            <img src="assets/profile-placeholder.png" alt="{{ member.name }}" class="profile-img">
+            <img [src]="member.image" alt="{{ member.name }}" class="profile-img">
             <h3>{{ member.name }}</h3>
             <p>{{ member.role }}</p>
           </div>

@@ -20,14 +20,14 @@ export class AboutComponent {
   ];
 
   teamMembers = [
-    { name: 'KUNCHALA CHAITANYA', role: 'Project Manager' },
-    { name: 'BATTULA MOUNIKA', role: 'Backend Developer' },
-    { name: 'KOLA BHARGAV', role: 'Frontend Developer' },
-    { name: 'KONCHADA PRANATHI', role: 'UI/UX Designer' },
-    { name: 'GURUGUBELLI SRAVANTHI', role: 'Database Administrator' },
-    { name: 'BALLA KAVYA', role: 'QA Engineer' },
-    { name: 'KOTLA HARSHITHA', role: 'DevOps Engineer' },
-    { name: 'GOLLA NIHARIKA', role: 'IoT Specialist' },
-    { name: 'KOTA MINNU MADAN', role: 'Full Stack Developer' }
+    { name: 'KUNCHALA CHAITANYA', role: 'Project Manager', image: 'assets/team/chaitanya.jpg' },
+    { name: 'BATTULA MOUNIKA', role: 'Backend Developer', image: 'assets/team/mounika.jpg' },
+    { name: 'KOLA BHARGAV', role: 'Frontend Developer', image: 'assets/team/bhargav.jpg' },
+    { name: 'KONCHADA PRANATHI', role: 'UI/UX Designer', image: 'assets/team/pranathi.jpg' },
+    { name: 'GURUGUBELLI SRAVANTHI', role: 'Database Administrator', image: 'assets/team/sravanthi.jpg' },
+    { name: 'BALLA KAVYA', role: 'QA Engineer', image: 'assets/team/kavya.jpg' },
+    { name: 'KOTLA HARSHITHA', role: 'DevOps Engineer', image: 'assets/team/harshitha.jpg' },
+    { name: 'GOLLA NIHARIKA', role: 'IoT Specialist', image: 'assets/team/niharika.jpg' },
+    { name: 'KOTA MINNU MADAN', role: 'Full Stack Developer', image: 'assets/team/madan.jpg' }
   ];
 }
