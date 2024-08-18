@@ -2,18 +2,18 @@
   <div class="water-ripple"></div>
   <div class="login-card">
     <div class="logo">
-      <!-- <img src="assets/fish-logo.png" alt="Logo"> -->
+      <i class="fas fa-fish fa-3x"></i>
     </div>
     <h2>Welcome Back</h2>
     <form (ngSubmit)="onLogin($event)">
       <div class="input-group">
         <i class="fas fa-user"></i>
-        <input type="text" id="username" required>
+        <input type="text" id="username" [(ngModel)]="username" name="username" required>
         <label for="username">Username</label>
       </div>
       <div class="input-group">
         <i class="fas fa-lock"></i>
-        <input type="password" id="password" required>
+        <input type="password" id="password" [(ngModel)]="password" name="password" required>
         <label for="password">Password</label>
       </div>
       <button type="submit" class="login-btn">
@@ -21,8 +21,7 @@
         <div class="ripple"></div>
       </button>
     </form>
-    <p class="forgot-password">Forgot your password? <a href="">Reset</a></p>
-    <p class="forgot-password">New User?  <a href="/register">Register</a></p>
-
+    <p class="forgot-password">Forgot your password? <a href="#">Reset</a></p>
+    <p class="signup-link">New User? <a href="/register">Register</a></p>
   </div>
 </div>
