@@ -1,24 +1,50 @@
+.pond-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .pond-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem 0;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.pond-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-content {
   text-align: center;
 }
 
+.card-content h3 {
+  color: #0288d1;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card-content p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
 button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   background-color: #0288d1;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #0277bd;
+  background-color: #026aa7;
 }
