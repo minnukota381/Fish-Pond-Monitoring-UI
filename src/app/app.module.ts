@@ -12,6 +12,7 @@ import { PondManagementComponent } from './pond-management/pond-management.compo
 import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     PondManagementComponent,
     SensorDetailsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
