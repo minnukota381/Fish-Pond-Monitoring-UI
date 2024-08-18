@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f0f5f9;
 }
 
@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   overflow: hidden;
   position: relative;
 }
@@ -43,11 +43,31 @@ body {
   position: relative;
   z-index: 1;
   backdrop-filter: blur(10px);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.login-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #6e5773);
+  transform: rotate(45deg);
+  opacity: 0.1;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
 }
 
 .login-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.login-card:hover::before {
+  transform: rotate(45deg) scale(1.1);
 }
 
 .logo {
@@ -63,17 +83,29 @@ body {
 }
 
 .logo img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(5deg);
 }
 
 h2 {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #667eea, #764ba2);
 }
 
 .input-group {
@@ -90,7 +122,7 @@ input {
   border-bottom: 2px solid #ddd;
   outline: none;
   background: transparent;
-  transition: border-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 label {
@@ -108,18 +140,18 @@ input:focus ~ label,
 input:valid ~ label {
   top: -20px;
   font-size: 14px;
-  color: #3a7bd5;
+  color: #667eea;
   font-weight: 600;
 }
 
 input:focus {
-  border-bottom: 2px solid #3a7bd5;
+  border-bottom: 2px solid #667eea;
 }
 
 .login-btn {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+  background: linear-gradient(45deg, #667eea, #764ba2);
   color: white;
   border: none;
   border-radius: 30px;
@@ -134,7 +166,7 @@ input:focus {
 }
 
 .login-btn:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
   transform: translateY(-2px);
 }
 
@@ -165,14 +197,14 @@ input:focus {
 }
 
 .forgot-password a {
-  color: #3a7bd5;
+  color: #667eea;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .forgot-password a:hover {
-  color: #00d2ff;
+  color: #764ba2;
   text-decoration: underline;
 }
 
@@ -183,7 +215,7 @@ input:focus {
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   input, .login-btn {
@@ -201,7 +233,7 @@ input:focus {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
 
@@ -228,7 +260,7 @@ input:focus {
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   input, .login-btn {
