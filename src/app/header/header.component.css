@@ -1,12 +1,27 @@
+/* Header Styles */
 header {
   background-color: #0288d1;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
   padding: 0;
   margin: 0;
 }
@@ -23,4 +38,22 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Hide menu on small screens, can toggle with a menu button */
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .brand {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
