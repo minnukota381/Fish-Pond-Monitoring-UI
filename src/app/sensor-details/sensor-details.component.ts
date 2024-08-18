@@ -11,21 +11,20 @@ export class SensorDetailsComponent {
     { name: 'Oxygen Level', value: '5.2 mg/L' },
     { name: 'Rainfall', value: '12 mm' },
     { name: 'Water Level', value: '1.2 meters' },
-    // Add more sensors as needed
   ];
 
   getIcon(sensorName: string): string {
     switch (sensorName) {
       case 'pH Level':
-        return 'fas fa-tachometer-alt'; // Example icon for pH level
+        return 'fas fa-tachometer-alt';
       case 'Oxygen Level':
-        return 'fas fa-tint'; // Example icon for oxygen level
+        return 'fas fa-tint';
       case 'Rainfall':
-        return 'fas fa-cloud-showers-heavy'; // Example icon for rainfall
+        return 'fas fa-cloud-showers-heavy';
       case 'Water Level':
-        return 'fas fa-water'; // Example icon for water level
+        return 'fas fa-water';
       default:
-        return 'fas fa-cogs'; // Default icon
+        return 'fas fa-cogs';
     }
   }
 }
