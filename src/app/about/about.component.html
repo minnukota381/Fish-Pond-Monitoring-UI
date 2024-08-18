@@ -1,17 +1,35 @@
-<h2>About Fish Pond Monitoring</h2>
-<p>This project is designed to monitor various environmental factors in fish ponds.</p>
-<h2>About the Project</h2>
-<p>{{ projectDescription }}</p>
+<div class="about-section">
+  <div class="about-content">
+    <h2>About the Project</h2>
+    <p>{{ projectDescription }}</p>
 
-<h3>Monitored Sensors</h3>
-<ul>
-  <li *ngFor="let sensor of sensors">{{ sensor }}</li>
-</ul>
+    <h3>Monitored Sensors</h3>
+    <ul class="sensor-list">
+      <li *ngFor="let sensor of sensors">
+        <i class="fas fa-microchip"></i> {{ sensor }}
+      </li>
+    </ul>
+  </div>
+</div>
 
-<h3>Our Project Team</h3>
-<div class="team-container">
-  <div class="team-card" *ngFor="let member of teamMembers">
-    <h3>{{ member.name }}</h3>
-    <p>{{ member.role }}</p>
+<div class="team-section">
+  <div class="team-content">
+    <h3>Meet Our Team</h3>
+    <div class="team-container">
+      <div class="team-card" *ngFor="let member of teamMembers">
+        <div class="team-card-inner">
+          <div class="team-card-front">
+            <img src="assets/profile-placeholder.png" alt="{{ member.name }}" class="profile-img">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.role }}</p>
+          </div>
+          <div class="team-card-back">
+            <h4>{{ member.name }}</h4>
+            <p>Role: {{ member.role }}</p>
+            <p>Experienced in delivering outstanding results in the field of {{ member.role }}.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
