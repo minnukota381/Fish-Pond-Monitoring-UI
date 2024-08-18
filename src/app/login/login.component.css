@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 :root {
-  --primary-color: #00a8e8;
+  --primary-color: #3498db; /* Main button background color */
+  --accent-color: #1abc9c;  /* Hover background color */
   --secondary-color: #003459;
-  --accent-color: #00171f;
   --text-color: #333;
   --background-color: #f8f9fa;
+  --ripple-color: rgba(255, 255, 255, 0.3); /* Ripple effect color */
 }
 
 body, html {
@@ -15,6 +16,7 @@ body, html {
   background-color: var(--background-color);
 }
 
+/* Login Container */
 .login-container {
   display: flex;
   justify-content: center;
@@ -41,6 +43,7 @@ body, html {
   100% { transform: rotate(360deg); }
 }
 
+/* Login Card */
 .login-card {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
@@ -62,6 +65,7 @@ body, html {
   height: auto;
 }
 
+/* Heading */
 h2 {
   color: var(--secondary-color);
   text-align: center;
@@ -69,6 +73,7 @@ h2 {
   font-weight: 600;
 }
 
+/* Input Group */
 .input-group {
   position: relative;
   margin-bottom: 30px;
@@ -83,7 +88,7 @@ h2 {
   border-bottom: 2px solid #ddd;
   outline: none;
   background: transparent;
-  transition: 0.3s;
+  transition: border-color 0.3s;
 }
 
 .input-group label {
@@ -109,18 +114,19 @@ h2 {
   border-bottom: 2px solid var(--primary-color);
 }
 
+/* Button Styling */
 .login-btn {
   width: 100%;
   padding: 12px;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--primary-color) !important; /* Ensures button color */
+  color: #ffffff; /* Text color */
   border: none;
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .login-btn span {
@@ -128,9 +134,10 @@ h2 {
   z-index: 1;
 }
 
+/* Ripple Effect */
 .login-btn .ripple {
   position: absolute;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--ripple-color); /* Ripple color */
   border-radius: 50%;
   transform: scale(0);
   animation: ripple-effect 0.6s linear;
@@ -143,10 +150,13 @@ h2 {
   }
 }
 
+/* Hover Effect */
 .login-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color); /* Hover background color */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Forgot Password Link */
 .forgot-password {
   text-align: center;
   margin-top: 20px;
