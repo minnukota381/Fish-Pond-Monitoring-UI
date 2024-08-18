@@ -1,5 +1,9 @@
+<h2>Sensor Details</h2>
 <div class="sensor-cards">
   <div class="sensor-card" *ngFor="let sensor of sensors">
+    <div class="sensor-icon">
+      <i [ngClass]="getIcon(sensor.name)"></i>
+    </div>
     <h3>{{ sensor.name }}</h3>
     <p>{{ sensor.value }}</p>
   </div>

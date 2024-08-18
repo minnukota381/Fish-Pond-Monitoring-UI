@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-sensor-details',
   templateUrl: './sensor-details.component.html',
-  styleUrl: './sensor-details.component.css'
+  styleUrls: ['./sensor-details.component.css']
 })
 export class SensorDetailsComponent {
   sensors = [
@@ -14,4 +14,18 @@ export class SensorDetailsComponent {
     // Add more sensors as needed
   ];
 
+  getIcon(sensorName: string): string {
+    switch (sensorName) {
+      case 'pH Level':
+        return 'fas fa-tachometer-alt'; // Example icon for pH level
+      case 'Oxygen Level':
+        return 'fas fa-tint'; // Example icon for oxygen level
+      case 'Rainfall':
+        return 'fas fa-cloud-showers-heavy'; // Example icon for rainfall
+      case 'Water Level':
+        return 'fas fa-water'; // Example icon for water level
+      default:
+        return 'fas fa-cogs'; // Default icon
+    }
+  }
 }
