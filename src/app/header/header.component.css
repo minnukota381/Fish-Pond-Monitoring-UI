@@ -5,18 +5,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .brand {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -27,17 +33,42 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
+  position: relative;
 }
 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #b3e5fc;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #b3e5fc;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 
 /* Responsive Styles */
