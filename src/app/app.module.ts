@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';  // Import FormsModule
 
-// Components
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -12,10 +12,6 @@ import { PondManagementComponent } from './pond-management/pond-management.compo
 import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -32,13 +28,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatCardModule,
-    MatButtonModule
+    FormsModule  // Add FormsModule here
   ],
   providers: [
-    provideClientHydration(),
-    provideAnimationsAsync()
-
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
