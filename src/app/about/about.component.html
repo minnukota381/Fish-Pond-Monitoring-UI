@@ -1,2 +1,17 @@
 <h2>About Fish Pond Monitoring</h2>
 <p>This project is designed to monitor various environmental factors in fish ponds.</p>
+<h2>About the Project</h2>
+<p>{{ projectDescription }}</p>
+
+<h3>Monitored Sensors</h3>
+<ul>
+  <li *ngFor="let sensor of sensors">{{ sensor }}</li>
+</ul>
+
+<h3>Our Project Team</h3>
+<div class="team-container">
+  <div class="team-card" *ngFor="let member of teamMembers">
+    <h3>{{ member.name }}</h3>
+    <p>{{ member.role }}</p>
+  </div>
+</div>
