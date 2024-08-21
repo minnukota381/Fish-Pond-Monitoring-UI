@@ -28,6 +28,6 @@ export class AboutComponent {
     { name: 'BALLA KAVYA', role: 'Database Management and Optimization', image: 'assets/team/kavya.jpg' },
     { name: 'KOTLA HARSHITHA', role: 'Pond Management Module', image: 'assets/team/harshitha.jpg' },
     { name: 'GOLLA NIHARIKA', role: 'Sensor Management Module', image: 'assets/team/niharika.jpg' },
-    { name: 'KOTA MINNU MADAN', role: 'Arduino Integration, Data Handling & System Integration', image: 'assets/team/madan.jpg' }
+    { name: 'KOTA MINNU MADAN', role: 'Arduino Integration, Data Handling & System Integration', image: 'assets/team/minnukota381.JPG' }
   ];
 }
