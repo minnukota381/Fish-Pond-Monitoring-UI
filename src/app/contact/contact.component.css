@@ -1,8 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.contact-section {
+  background-color: #f0f4f8;
+  padding: 80px 0;
+}
+
+.contact-section-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 h2 {
   color: #0288d1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  text-align: center;
 }
 
 p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-form {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 1.1rem 1.3rem;
   font-size: 1rem;
-  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0288d1;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  background-color: #0288d1;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1.1rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0069c0;
 }
