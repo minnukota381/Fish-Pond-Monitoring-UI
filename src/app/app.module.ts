@@ -30,7 +30,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule  // Add FormsModule here
+    FormsModule
   ],
   providers: [
     provideClientHydration()
