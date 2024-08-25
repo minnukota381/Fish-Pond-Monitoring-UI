@@ -41,7 +41,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
 }
@@ -76,7 +76,7 @@ nav ul li a:hover::after {
   nav ul {
     flex-direction: column;
     align-items: center;
-    display: none; /* Hide menu on small screens, can toggle with a menu button */
+    display: none;
   }
 
   nav ul.active {
