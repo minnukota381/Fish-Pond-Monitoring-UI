@@ -16,7 +16,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   onLogin(event: Event): void {
-    event.preventDefault(); // Prevent form from submitting normally
+    event.preventDefault();
     this.addRippleEffect(event);
 
     if (this.username === this.predefinedUsername && this.password === this.predefinedPassword) {
