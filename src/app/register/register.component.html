@@ -1,39 +1,60 @@
 <div class="register-container">
   <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
-    <h2>Register</h2>
+    <h2>Join Us</h2>
 
-    <div class="form-group" [class.has-error]="username.invalid && (username.dirty || username.touched)">
+    <div class="form-group" [class.has-error]="username.invalid && (username.dirty || username.touched)"
+         [class.has-success]="username.valid && (username.dirty || username.touched)">
       <label for="username">Username</label>
-      <input type="text" id="username" name="username" [(ngModel)]="user.username" required #username="ngModel">
+      <input type="text" id="username" name="username" [(ngModel)]="user.username"
+             required minlength="3" maxlength="20" #username="ngModel"
+             placeholder="Choose a username">
       <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert-danger">
-        Username is required
+        <div *ngIf="username.errors?.['required']">Username is required</div>
+        <div *ngIf="username.errors?.['minlength']">Username must be at least 3 characters long</div>
+        <div *ngIf="username.errors?.['maxlength']">Username cannot be more than 20 characters long</div>
       </div>
     </div>
 
-    <div class="form-group" [class.has-error]="email.invalid && (email.dirty || email.touched)">
+    <div class="form-group" [class.has-error]="email.invalid && (email.dirty || email.touched)"
+         [class.has-success]="email.valid && (email.dirty || email.touched)">
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" [(ngModel)]="user.email" required email #email="ngModel">
+      <input type="email" id="email" name="email" [(ngModel)]="user.email"
+             required email #email="ngModel"
+             placeholder="Enter your email">
       <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert-danger">
-        Valid email is required
+        <div *ngIf="email.errors?.['required']">Email is required</div>
+        <div *ngIf="email.errors?.['email']">Please enter a valid email address</div>
       </div>
     </div>
 
-    <div class="form-group" [class.has-error]="password.invalid && (password.dirty || password.touched)">
+    <div class="form-group" [class.has-error]="password.invalid && (password.dirty || password.touched)"
+         [class.has-success]="password.valid && (password.dirty || password.touched)">
       <label for="password">Password</label>
-      <input type="password" id="password" name="password" [(ngModel)]="user.password" required minlength="6" #password="ngModel">
+      <input type="password" id="password" name="password" [(ngModel)]="user.password"
+             required minlength="8" #password="ngModel"
+             placeholder="Create a password">
       <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert-danger">
-        Password must be at least 6 characters long
+        <div *ngIf="password.errors?.['required']">Password is required</div>
+        <div *ngIf="password.errors?.['minlength']">Password must be at least 8 characters long</div>
       </div>
     </div>
 
-    <div class="form-group" [class.has-error]="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)">
+    <div class="form-group" [class.has-error]="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)"
+         [class.has-success]="confirmPassword.valid && (confirmPassword.dirty || confirmPassword.touched)">
       <label for="confirmPassword">Confirm Password</label>
-      <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" required #confirmPassword="ngModel">
+      <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword"
+             required #confirmPassword="ngModel"
+             placeholder="Confirm your password">
       <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)" class="alert-danger">
-        Please confirm your password
+        <div *ngIf="confirmPassword.errors?.['required']">Please confirm your password</div>
+      </div>
+      <div *ngIf="confirmPassword.valid && password.valid && user.password !== user.confirmPassword" class="alert-danger">
+        Passwords do not match
       </div>
     </div>
 
-    <button type="submit" [disabled]="!registerForm.form.valid">Register</button>
+    <button type="submit" [disabled]="!registerForm.form.valid || user.password !== user.confirmPassword">
+      Create Account
+    </button>
   </form>
 </div>
