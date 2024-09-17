@@ -53,7 +53,7 @@ export class AboutComponent {
     {
       name: 'KOTLA HARSHITHA',
       role: 'Pond Management Module',
-      image: 'assets/team/harshitha.jpg',
+      image: 'assets/team/Harsi.jpg',
     },
     {
       name: 'GOLLA NIHARIKA',
