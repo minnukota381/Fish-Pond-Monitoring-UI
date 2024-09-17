@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
   projectDescription = `
@@ -16,18 +16,67 @@ export class AboutComponent {
     'pH Sensor',
     'Water Level Sensor',
     'Rainfall Sensor',
-    'Oxygen Sensor'
+    'Oxygen Sensor',
   ];
 
   teamMembers = [
-    { name: 'KUNCHALA CHAITANYA', role: 'Historical Data Analysis and Reporting', image: 'assets/team/chaitanya.jpg' },
-    { name: 'BATTULA MOUNIKA', role: 'Data Visualization Module', image: 'assets/team/mounika.jpg' },
-    { name: 'KOLA BHARGAV', role: 'Email Notification System & Hardware Connection', image: 'assets/team/bhargav.jpg' },
-    { name: 'KONCHADA PRANATHI', role: 'Login and Authentication Module', image: 'assets/team/pranathi.jpg' },
-    { name: 'GURUGUBELLI SRAVANTHI', role: 'User Interface for Pond Details', image: 'assets/team/sravanthi.jpg' },
-    { name: 'BALLA KAVYA', role: 'Database Management and Optimization', image: 'assets/team/Kavya.JPG' },
-    { name: 'KOTLA HARSHITHA', role: 'Pond Management Module', image: 'assets/team/harshitha.jpg' },
-    { name: 'GOLLA NIHARIKA', role: 'Sensor Management Module', image: 'assets/team/niharika.jpg' },
-    { name: 'KOTA MINNU MADAN', role: 'Arduino Integration, Data Handling & System Integration', image: 'assets/team/minnukota381.JPG' }
+    {
+      name: 'KUNCHALA CHAITANYA',
+      role: 'Historical Data Analysis and Reporting',
+      image: 'assets/team/chaitanya.jpg',
+    },
+    {
+      name: 'BATTULA MOUNIKA',
+      role: 'Data Visualization Module',
+      image: 'assets/team/mounika.jpg',
+    },
+    {
+      name: 'KOLA BHARGAV',
+      role: 'Email Notification System & Hardware Connection',
+      image: 'assets/team/bhargav.jpg',
+    },
+    {
+      name: 'KONCHADA PRANATHI',
+      role: 'Login and Authentication Module',
+      image: 'assets/team/pranathi.jpg',
+    },
+    {
+      name: 'GURUGUBELLI SRAVANTHI',
+      role: 'User Interface for Pond Details',
+      image: 'assets/team/sravanthi.jpg',
+    },
+    {
+      name: 'BALLA KAVYA',
+      role: 'Database Management and Optimization',
+      image: 'assets/team/Kavya.JPG',
+    },
+    {
+      name: 'KOTLA HARSHITHA',
+      role: 'Pond Management Module',
+      image: 'assets/team/harshitha.jpg',
+    },
+    {
+      name: 'GOLLA NIHARIKA',
+      role: 'Sensor Management Module',
+      image: 'assets/team/niharika.jpg',
+    },
+    {
+      name: 'KOTA MINNU MADAN',
+      role: 'Arduino Integration, Data Handling & System Integration',
+      image: 'assets/team/minnukota381.JPG',
+    },
+  ];
+
+  projectGuides = [
+    {
+      name: 'Debendra Maharana',
+      role: 'Complete Project Guide',
+      image: 'assets/guides/debendra.jpg',
+    },
+    {
+      name: 'Rajesh Kumar Mishra',
+      role: 'IoT Integration',
+      image: 'assets/guides/rajesh.jpg',
+    },
   ];
 }

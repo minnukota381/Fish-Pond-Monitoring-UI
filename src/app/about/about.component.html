@@ -33,3 +33,16 @@
     </div>
   </div>
 </div>
+
+<div class="guides-section">
+  <div class="guides-content">
+    <h3>Project Guides</h3>
+    <div class="guides-container">
+      <div class="guide-card" *ngFor="let guide of projectGuides">
+        <img [src]="guide.image" alt="{{ guide.name }}" class="guide-img">
+        <h4>{{ guide.name }}</h4>
+        <p>{{ guide.role }}</p>
+      </div>
+    </div>
+  </div>
+</div>
