@@ -28,12 +28,12 @@ export class AboutComponent {
     {
       name: 'KOLA BHARGAV',
       role: 'Email Notification System & Hardware Connection',
-      image: 'assets/team/bhargav.jpg',
+      image: 'assets/team/bhargav.png',
     },
     {
       name: 'KUNCHALA CHAITANYA',
       role: 'Historical Data Analysis and Reporting',
-      image: 'assets/team/chaitanya.jpg',
+      image: 'assets/team/CHAITU2.jpg',
     },
     {
       name: 'BATTULA MOUNIKA',
@@ -58,7 +58,7 @@ export class AboutComponent {
     {
       name: 'GOLLA NIHARIKA',
       role: 'Sensor Management Module',
-      image: 'assets/team/niharika.jpg',
+      image: 'assets/team/Niharika.jpg',
     },
     {
       name: 'KOTA MINNU MADAN',
