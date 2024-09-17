@@ -71,7 +71,7 @@ export class AboutComponent {
     {
       name: 'Debendra Maharana',
       role: 'Complete Project Guide',
-      image: 'assets/guides/debendra.jpg',
+      image: 'assets/guides/Deb.png',
     },
     {
       name: 'Rajesh Kumar Mishra',
