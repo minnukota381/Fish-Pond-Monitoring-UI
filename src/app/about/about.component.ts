@@ -20,7 +20,7 @@ export class AboutComponent {
   ];
 
   teamMembers = [
-    { name: 'KUNCHALA CHAITANYA', role: 'Historical Data Analysis and Reporting', image: 'assets/team/chaitanya.jpg' },
+    { name: 'KUNCHALA CHAITANYA', role: 'Historical Data Analysis and Reporting', image: 'assets/team/CHAITU2.JPG' },
     { name: 'BATTULA MOUNIKA', role: 'Data Visualization Module', image: 'assets/team/mounika.jpg' },
     { name: 'KOLA BHARGAV', role: 'Email Notification System & Hardware Connection', image: 'assets/team/bhargav.jpg' },
     { name: 'KONCHADA PRANATHI', role: 'Login and Authentication Module', image: 'assets/team/pranathi.jpg' },
