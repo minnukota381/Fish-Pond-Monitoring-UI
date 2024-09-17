@@ -20,9 +20,9 @@ export class AboutComponent {
   ];
 
   teamMembers = [
-    { name: 'KUNCHALA CHAITANYA', role: 'Historical Data Analysis and Reporting', image: 'assets/team/CHAITU2.JPG' },
+    { name: 'KUNCHALA CHAITANYA', role: 'Historical Data Analysis and Reporting', image: 'assets/team/CHAITU2.jpg' },
     { name: 'BATTULA MOUNIKA', role: 'Data Visualization Module', image: 'assets/team/mounika.jpg' },
-    { name: 'KOLA BHARGAV', role: 'Email Notification System & Hardware Connection', image: 'assets/team/bhargav.jpg' },
+    { name: 'KOLA BHARGAV', role: 'Email Notification System & Hardware Connection', image: 'assets/team/bhargav.png' },
     { name: 'KONCHADA PRANATHI', role: 'Login and Authentication Module', image: 'assets/team/pranathi.jpg' },
     { name: 'GURUGUBELLI SRAVANTHI', role: 'User Interface for Pond Details', image: 'assets/team/sravanthi.jpg' },
     { name: 'BALLA KAVYA', role: 'Database Management and Optimization', image: 'assets/team/Kavya.JPG' },
