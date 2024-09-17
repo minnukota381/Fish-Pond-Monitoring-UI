@@ -76,7 +76,7 @@ export class AboutComponent {
     {
       name: 'Rajesh Kumar Mishra',
       role: 'IoT Integration',
-      image: 'assets/guides/rajesh.jpg',
+      image: 'assets/guides/Rajesh.png',
     },
   ];
 }
