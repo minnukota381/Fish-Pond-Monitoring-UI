@@ -47,7 +47,3 @@ The system integrates sensors that provide real-time information about pond cond
 ## Contributing
 
 Contributions are welcome! If you’d like to suggest improvements or report issues, feel free to open a pull request or submit an issue on GitHub.
-
-## License
-
-This project is licensed under the MIT License. For more details, refer to the LICENSE file in the repository.
