@@ -11,18 +11,6 @@ Welcome to the **Smart Pond Monitoring System** — an IoT-based platform for in
 - **Oxygen Saturation Monitoring**: Manage oxygen levels for healthy aquatic life.
 - **Real-time Analytics**: Utilize data to make informed decisions about pond management.
 
-## Table of Contents
-
-1. Introduction
-2. Features
-3. Technology Stack
-4. Installation
-5. Usage
-6. Pond Management
-7. Sensor Details
-8. Contributing
-9. License
-
 ## Introduction
 
 The **Smart Pond Monitoring System** modernizes traditional pond and aquaculture management with IoT integration. It offers real-time data, automating many aspects of pond care to improve efficiency and environmental sustainability.
