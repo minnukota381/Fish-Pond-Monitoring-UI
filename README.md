@@ -1,4 +1,4 @@
-# Smart Pond Monitoring System
+# IoT Based Smart Pond Monitoring System
 
 Welcome to the **Smart Pond Monitoring System** — an IoT-based platform for intelligent aquatic ecosystem management. This system provides real-time insights, precision control, and data-driven decision-making to optimize the health of your pond.
 
