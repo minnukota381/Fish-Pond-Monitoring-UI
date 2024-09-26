@@ -43,3 +43,4 @@ Manage your ponds by viewing all registered ponds on the dashboard. Each pond ha
 ## Sensor Details
 
 The system integrates sensors that provide real-time information about pond conditions. These sensors track important metrics like temperature, pH levels, water levels, oxygen saturation, and rainfall. The data is displayed in a user-friendly layout for easy monitoring.
+
