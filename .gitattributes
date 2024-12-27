@@ -1,8 +1,0 @@
-
-# Prioritize TypeScript files but don't hide other languages
-*.ts linguist-language=TypeScript
-*.tsx linguist-language=TypeScript
-
-# Mark vendor files as not detected in language stats
-*.min.js linguist-vendored
-*.css linguist-vendored
